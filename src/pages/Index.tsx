@@ -1,9 +1,7 @@
-import { HeroSection } from "@/components/HeroSection";
-
 const Index = () => {
   return (
-    <div className="min-h-screen bg-background">
-      <HeroSection />
+    <div className="min-h-screen flex items-center justify-center bg-slate-900 text-white">
+      <h1 className="text-6xl font-bold">Hello World</h1>
     </div>
   );
 };
