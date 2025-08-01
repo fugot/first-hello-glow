@@ -18,6 +18,13 @@ export default {
 			}
 		},
 		extend: {
+			backgroundImage: {
+				'hero-gradient': 'var(--hero-gradient)',
+				'background-gradient': 'var(--background-gradient)',
+			},
+			boxShadow: {
+				'glow': 'var(--glow-shadow)',
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -88,8 +95,21 @@ export default {
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'glow': 'glow 2s ease-in-out infinite alternate',
+				'float': 'float 3s ease-in-out infinite',
 			}
+		},
+		keyframes: {
+			glow: {
+				'0%': { boxShadow: '0 0 20px hsl(142, 86%, 65%, 0.3)' },
+				'100%': { boxShadow: '0 0 40px hsl(142, 86%, 65%, 0.6)' }
+			},
+			float: {
+				'0%, 100%': { transform: 'translateY(0px)' },
+				'50%': { transform: 'translateY(-10px)' }
+			}
+		}
 		}
 	},
 	plugins: [require("tailwindcss-animate")],
