@@ -19,11 +19,11 @@ export default {
 		},
 		extend: {
 			backgroundImage: {
-				'hero-gradient': 'var(--hero-gradient)',
-				'background-gradient': 'var(--background-gradient)',
+				'hero-gradient': 'linear-gradient(135deg, hsl(142, 76%, 36%), hsl(142, 86%, 65%))',
+				'background-gradient': 'linear-gradient(180deg, hsl(240, 10%, 3.9%), hsl(240, 8%, 6%))',
 			},
 			boxShadow: {
-				'glow': 'var(--glow-shadow)',
+				'glow': '0 0 40px hsl(142, 86%, 65%, 0.3)',
 			},
 			colors: {
 				border: 'hsl(var(--border))',
